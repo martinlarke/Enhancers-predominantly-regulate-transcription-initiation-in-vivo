@@ -5,7 +5,8 @@
 #  by gene body to generate pausing indices.
 #
 #  To run, place in folder with .bam or .bed of reads/frags and a .bed (whole gene) format download of the ucsc genes
-#  from the table browser:
+#  from the table browser, with overlapping entries removed (use script IdentifyUniqueUCSC.pl on downloaded gene list)
+#  run this script using the following command:
 #
 #                                nohup perl Calculate_PI.pl <$genes.bed6> <reads.bam/frags.bed> & 
 #
