@@ -33,8 +33,8 @@ system ("nohup bowtie -m 2 -p 4 --maxins 1000 --best --strata --chunkmb 256 --sa
 print "alignment complete\n\n";
 
 # unzip sam
-system ("nohup zcat alignment.sam.gz > alignment.sam");
-print "alignment file unzipped\n\n";
+#system ("nohup zcat alignment.sam.gz > alignment.sam");
+#print "alignment file unzipped\n\n";
 
 # filter properly paired reads
 system ("nohup samtools view -bS -f 3 -o properpairs.bam alignment.sam");
